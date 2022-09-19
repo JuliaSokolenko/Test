@@ -1,0 +1,21 @@
+{
+    "name": "test-task",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "parcel build src/pug/index.pug",
+        "start": "parcel serve src/pug/index.pug"
+    },
+    "author": "JuliaSokolenko",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/css": "^1.14.0",
+        "@parcel/transformer-image": "^2.7.0",
+        "@parcel/transformer-pug": "^2.7.0",
+        "@parcel/transformer-sass": "^2.7.0",
+        "@prettier/plugin-pug": "^2.2.0",
+        "just-validate": "^3.8.1",
+        "parcel": "^2.7.0",
+        "prettier": "2.7.1",
+        "sass": "^1.54.9"
+    }
+}

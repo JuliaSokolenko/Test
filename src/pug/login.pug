@@ -1,0 +1,74 @@
+-
+    const loginData = {
+        logo: {
+            anchor: '#logo',
+            logoSrc: '../assets/images/signNow-logo.svg',
+            logoAlt: 'logo'
+        },
+        title: 'Sign up for a free trial',
+        linksList: [
+            {
+                linkAnchor: '#facebook',
+                linkTitle: 'Facebook',
+                iconSrc: '../assets/images/Facebook.svg',
+                iconAlt: 'facebook'
+            },
+            {
+                linkAnchor: '#google',
+                linkTitle: 'Google',
+                iconSrc: '../assets/images/Google.svg',
+                iconAlt: 'google'
+            },
+            {
+                linkAnchor: '#apple',
+                linkTitle: 'Apple',
+                iconSrc: '../assets/images/Apple.svg',
+                iconAlt: 'apple'
+            }
+        ],
+        caption: 'or sign up using e-mail',
+        inputEmail: {
+            name:'email',
+            placeholder: 'email@example.com'
+        },
+        inputPassword: {
+            name:'password',
+            placeholder: 'Enter password'
+        },
+        buttonTitle: 'Start your free trial',
+        tooltip: ' &#127881; No credit card required',
+        text: 'Already have an account? <a class="login__link" href="#login">Login</a> or <a class="login__link" href="#login-with-sso">Login with SSO</a>',
+        details: "By proceeding to create your account, you agree to signNow's <a class='login__link login__link--secondary' href='#privacy-policy'>Privacy Policy</a> and <a class='login__link login__link--secondary' href='#terms'>Terms of Service</a> and opt to receive marketing communications",
+    };
+
+.login 
+    a.login__logo(href=loginData.logo.anchor) 
+        img.login__logo-image(
+            src=loginData.logo.logoSrc,
+            alt=loginData.logo.logoAlt
+        )
+    .login__wrapper 
+        h6.login__title= loginData.title
+        .login__socials 
+            each item in loginData.linksList
+                a.login__social-link(href=item.linkAnchor)
+                    img.login__icon(src=item.iconSrc, alt=iconAlt)
+                    | #{ item.linkTitle }
+        p.login__caption= loginData.caption
+        form#form.login__form(action='#')
+            input#email.login__input(
+                type='email',
+                name=loginData.inputEmail.name,
+                placeholder=loginData.inputEmail.placeholder
+            ) 
+            input#password.login__input(
+                type='password',
+                name=loginData.inputPassword.name,
+                placeholder=loginData.inputPassword.placeholder
+            )
+            button#submit.login__button(type='submit') #{ loginData.buttonTitle }
+            p.login__tooltip!= loginData.tooltip
+        p.login__text!= loginData.text
+        p.login__details!= loginData.details
+
+    ul#list.login__list

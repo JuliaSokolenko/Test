@@ -1,0 +1,14 @@
+.just-validate {
+    &-error {
+        &-label {
+            font-family: $font-main-semibold;
+            font-size: 12px;
+            line-height: 1.33;
+            color: $red !important;
+            margin-top: 7px;
+        }
+        &-field {
+            border-color: $red;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@include font-face(
+    'GraphikBold',
+    '../assets/fonts/graphik-bold-webfont',
+    700,
+    normal
+);
+
+@include font-face(
+    'Open_SansBold',
+    '../assets/fonts/opensans-bold-webfont',
+    700,
+    normal
+);
+
+@include font-face(
+    'Open_SansRegular',
+    '../assets/fonts/opensans-regular-webfont',
+    400,
+    normal
+);
+
+@include font-face(
+    'Open_SansSemibold',
+    '../assets/fonts/opensans-semibold-webfont',
+    600,
+    normal
+);

@@ -1,0 +1,9 @@
+.vscode
+
+node_modules/
+
+# parcel
+.parcel*
+dist/
+
+yarn-error.log
